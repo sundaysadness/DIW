@@ -8,17 +8,17 @@
 # diw-tp-semana-02
 
 ## Print da tela da página criada
-![site](img/Semana2/capturaDeTelaSite.png)
+![site](img/capturaDeTelaSite.png)
 
-![inspeção](img/Semana2/inspecaoNetwork.png)
+![inspeção](img/inspecaoNetwork.png)
 
 <hr>
 
 # diw-tp-semana-03
 
 ## Print da tela da página criada (Curriculum Vitae)
-![curriculo](img/Semana3/curriculo.png)
+![curriculo](img/curriculo.png)
 
-![inspeção](img/Semana3/image.png)
+![inspeção](img/image.png)
 
 <hr>
