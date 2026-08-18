@@ -5,6 +5,6 @@
 - Matricula: 923887
 
 ## Print da tela da página criada (Curriculum Vitae)
-![curriculo](img/curriculo.png)
+![curriculo](img/Semana3/curriculo.png)
 
-![inspeção](img/image.png)
+![inspeção](img/Semana3/image.png)

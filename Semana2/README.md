@@ -5,6 +5,6 @@
 - Matricula: 923887
 
 ## Print da tela da página criada
-![site](img/capturaDeTelaSite.png)
+![site](img/Semana2/capturaDeTelaSite.png)
 
-![inspeção](img/inspecaoNetwork.png)
+![inspeção](img/Semana2/inspecaoNetwork.png)
