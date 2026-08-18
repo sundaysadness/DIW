@@ -17,7 +17,7 @@
 # diw-tp-semana-03
 
 ## Print da tela da página criada (Curriculum Vitae)
-![curriculo](img/curriculo.png)
+![curriculo](img/curriculo.jpeg)
 
 ![inspeção](img/image.png)
 
