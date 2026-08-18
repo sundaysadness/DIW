@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(181, 202, 202);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 42px;
+}
+
+.centro{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
