@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resultado - A Fazenda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.png" class="logo me-2" alt="Logo">
+            A Fazenda 2026
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link " href="index.html">Início</a>
+                <a class="nav-link " href="votacao.html">Votar</a>
+                <a class="nav-link active" href="resultado.html">Resultado</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+
+<div class="fundo-pagina">
+    <h1 class="text-center">Resultado parcial</h1>
+    <p class="text-center">Total de votos: <strong id="total-votos">0</strong></p>
+    <div id="resultados"></div>
+    <div id="sem-votos" class="alert alert-info d-none">
+        Ainda não existem votos. Acesse a página de votação e escolha um participante!
+    </div>
+    <button class="btn btn-danger mt-4" data-bs-toggle="modal" data-bs-target="#modalZerar">
+        Zerar votação
+    </button>
+</div>
+
+<div class="modal fade" id="modalZerar" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirmar ação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">Tem certeza de que deseja apagar todos os votos?</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button class="btn btn-danger" onclick="zerarVotacao()" data-bs-dismiss="modal">Sim, zerar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+
+<script>
+async function carregarResultado() {
+    const participantes = await buscarParticipantes(true);
+    const votos = await buscarVotos();
+    const area = document.getElementById("resultados");
+    area.innerHTML = "";
+    document.getElementById("total-votos").textContent = votos.length;
+
+    if (votos.length === 0) {
+        document.getElementById("sem-votos").classList.remove("d-none");
+        return;
+    }
+    document.getElementById("sem-votos").classList.add("d-none");
+
+    const placar = participantes.map(p => {
+        const quantidade = votos.filter(v => Number(v.participanteId) === Number(p.id)).length;
+        const percentual = (quantidade / votos.length) * 100;
+        return { ...p, quantidade, percentual };
+    });
+
+    placar.sort((a, b) => b.quantidade - a.quantidade);
+
+    placar.forEach((p, indice) => {
+        area.innerHTML += `
+            <div class="row align-items-center border-bottom py-3">
+                <div class="col-md-2 text-center">
+                    <img src="${p.foto}" class="img-fluid rounded" style="max-height:100px" alt="${p.nome}">
+                </div>
+                <div class="col-md-10">
+                    <h5>${p.nome}
+                        ${indice === 0 ? '<span class="badge bg-danger">Sairia hoje</span>' : ''}
+                    </h5>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: ${p.percentual}%">
+                            ${p.percentual.toFixed(1)}% (${p.quantidade} votos)
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+    });
+}
+
+async function zerarVotacao() {
+    const votos = await buscarVotos();
+    for (const voto of votos) {
+        await apagarVoto(voto.id);
+    }
+    await carregarResultado();
+}
+
+carregarResultado();
+</script>
+
+</body>
+</html>

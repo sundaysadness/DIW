@@ -1,0 +1,161 @@
+{
+  "participantes": [
+    {
+      "id": 1,
+      "nome": "Ana",
+      "foto": "img/participante1.jpg",
+      "naRoca": true
+    },
+    {
+      "id": 2,
+      "nome": "Bruno",
+      "foto": "img/participante2.jpg",
+      "naRoca": true
+    },
+    {
+      "id": 3,
+      "nome": "Carla",
+      "foto": "img/participante3.jpg",
+      "naRoca": true
+    },
+    {
+      "id": 4,
+      "nome": "Daniel",
+      "foto": "img/participante4.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 5,
+      "nome": "Eduarda",
+      "foto": "img/participante5.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 6,
+      "nome": "Felipe",
+      "foto": "img/participante6.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 7,
+      "nome": "Gabriela",
+      "foto": "img/participante7.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 8,
+      "nome": "Henrique",
+      "foto": "img/participante8.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 9,
+      "nome": "Isabela",
+      "foto": "img/participante9.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 10,
+      "nome": "João",
+      "foto": "img/participante10.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 11,
+      "nome": "Karen",
+      "foto": "img/participante11.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 12,
+      "nome": "Lucas",
+      "foto": "img/participante12.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 13,
+      "nome": "Mariana",
+      "foto": "img/participante13.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 14,
+      "nome": "Nicolas",
+      "foto": "img/participante14.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 15,
+      "nome": "Olivia",
+      "foto": "img/participante15.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 16,
+      "nome": "Pedro",
+      "foto": "img/participante16.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 17,
+      "nome": "Rafaela",
+      "foto": "img/participante17.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 18,
+      "nome": "Samuel",
+      "foto": "img/participante18.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 19,
+      "nome": "Tatiane",
+      "foto": "img/participante19.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 20,
+      "nome": "Ulisses",
+      "foto": "img/participante20.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 21,
+      "nome": "Valentina",
+      "foto": "img/participante21.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 22,
+      "nome": "Wesley",
+      "foto": "img/participante22.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 23,
+      "nome": "Yasmin",
+      "foto": "img/participante23.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 24,
+      "nome": "Arthur",
+      "foto": "img/participante24.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 25,
+      "nome": "Beatriz",
+      "foto": "img/participante25.jpg",
+      "naRoca": false
+    },
+    {
+      "id": 26,
+      "nome": "Caio",
+      "foto": "img/participante26.jpg",
+      "naRoca": false
+    }
+  ],
+  "votos": []
+}

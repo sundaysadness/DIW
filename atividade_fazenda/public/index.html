@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Início - A Fazenda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-success">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="img/logo.png" class="logo me-2" alt="Logo">
+            A Fazenda 2026
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="index.html">Início</a>
+                <a class="nav-link " href="votacao.html">Votar</a>
+                <a class="nav-link " href="resultado.html">Resultado</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="container">
+
+<div class="fundo-pagina">
+    <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+            <img src="img/fazendeiro.jpg" class="foto-fazendeiro rounded-circle img-fluid" alt="Fazendeiro">
+        </div>
+        <div class="col-md-7">
+            <div class="card shadow">
+                <div class="card-body p-4">
+                    <h1>Bem-vindo à votação!</h1>
+                    <p>Escolha quem você deseja eliminar de A Fazenda 2026. Acompanhe a votação e veja o resultado parcial.</p>
+                    <a href="votacao.html" class="btn btn-success me-2">Votar agora</a>
+                    <a href="resultado.html" class="btn btn-outline-success">Ver parcial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="mt-4">Participantes na roça</h2>
+    <div id="destaques" class="row row-cols-1 row-cols-md-3 g-3"></div>
+</div>
+
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/api.js"></script>
+
+<script>
+async function carregarDestaques() {
+    const participantes = await buscarParticipantes(true);
+    const area = document.getElementById("destaques");
+    area.innerHTML = "";
+    participantes.forEach(p => {
+        area.innerHTML += `
+            <div class="col">
+                <div class="card h-100">
+                    <img src="${p.foto}" class="card-img-top" alt="${p.nome}">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">${p.nome}</h5>
+                        <span class="badge bg-danger">Na roça</span>
+                    </div>
+                </div>
+            </div>`;
+    });
+}
+carregarDestaques();
+</script>
+
+</body>
+</html>

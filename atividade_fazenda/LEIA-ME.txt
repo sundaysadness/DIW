@@ -1,0 +1,34 @@
+# Atividade A Fazenda 2026 — versão simples
+
+## Como executar
+
+1. Instale o Node.js.
+2. Abra o terminal na pasta deste projeto.
+3. Execute `npm install`.
+4. Execute `npm start`.
+5. Abra `http://localhost:3000`.
+
+## Imagens
+
+Coloque as imagens fornecidas pelo professor dentro de `public/img/` com estes nomes:
+
+- `logo.png`
+- `fazendeiro.jpg`
+- `participante1.jpg` até `participante26.jpg`
+
+A imagem de fundo `madeira.jpg` é opcional. Se não tiver, o fundo continuará funcionando com uma cor lisa.
+
+Se as imagens fornecidas tiverem outros nomes, altere os caminhos no `db.json` e nos arquivos HTML/CSS.
+
+## Observação sobre a contagem de votos do usuário
+
+A atividade não fornece login nem identificador de usuário. Por isso, a quantidade de votos feitos pelo navegador nesta sessão é contada com `sessionStorage`. Os votos propriamente ditos ficam somente no JSON Server, nunca no `localStorage`.
+
+## Arquivos
+
+- `db.json`: participantes e votos.
+- `public/index.html`: página inicial.
+- `public/votacao.html`: página de votação.
+- `public/resultado.html`: placar.
+- `public/js/api.js`: funções GET, POST e DELETE.
+- `public/css/style.css`: tema visual.
