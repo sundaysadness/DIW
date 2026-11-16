@@ -1,0 +1,343 @@
+{
+  
+  "usuarios": [
+    {
+      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
+      "login": "admin",
+      "senha": "123",
+      "nome": "Administrador do Sistema",
+      "email": "admin@abc.com"
+    },
+    {
+      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
+      "login": "user",
+      "senha": "123",
+      "nome": "Usuario Comum",
+      "email": "user@abc.com"
+    }
+  ],
+
+  "atracoes": [
+    {
+      "id": 1,
+      "nome": "Parque Municipal Américo Renné Giannetti",
+      "categoria": "Ar livre",
+      "tags": [ "natureza", "lazer", "caminhada", "família", "centro" ],
+      "endereco": "Av. Afonso Pena, 1377 – Centro",
+      "descricaoCurta": "Patrimônio ambiental mais antigo da capital, oferecendo 193 mil m² de natureza, lagos com pedalinhos, pistas de caminhada e um parque de diversões tradicional.",
+      "descricaoCompleta": "É a escolha perfeita para quem busca lazer, cultura e um descanso da rotina urbana sem sair do centro.",
+      "disponibilidade": "Terça a Sábado: Das 7h às 21h <br> Domingo: Das 7h às 17h",
+      "dica": "Aos domingos o parque fecha mais cedo, às 17h.",
+      "destaque": true,
+      "imagemPrincipal": "assets/img/parqueMunicipal.jpg",
+      "fotos": [
+        {
+          "titulo": "Entrada pela Av. Afonso Pena",
+          "arquivo": "assets/img/parqueMunicipal1.jfif"
+        },
+        {
+          "titulo": "Lago e pedalinhos",
+          "arquivo": "assets/img/parqueMunicipal2.avif"
+        },
+        {
+          "titulo": "Pistas de caminhada",
+          "arquivo": "assets/img/parqueMunicipal3.webp"
+        },
+        {
+          "titulo": "Parque de diversões",
+          "arquivo": "assets/img/parqueMunicipal4.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Cine Belas Artes",
+      "categoria": "Cultura",
+      "tags": ["cinema", "cultura", "filmes", "entretenimento"],
+      "endereco": "R. Gonçalves Dias, 1581 - Lourdes",
+      "descricaoCurta": "Sala de cinema repleta de opções, pipoca, pão de queijo e foco em filmes alternativos.",
+      "descricaoCompleta": "Cinema de rua tradicional, busca apresentar diversidade cultural na tela, com títulos que não fazem parte do circuito comercial. Pré-estreias de filmes, debates e mostras de cinema brasileiro e internacional estão sempre em exibição nas três salas do Belas Artes. O local conta ainda com café e livraria.",
+      "disponibilidade": "Semana toda",
+      "dica": "Aproveite para combinar a sessão com o café e a livraria do próprio cinema.",
+      "destaque": true,
+      "imagemPrincipal": "assets/img/cineUna.jpg",
+      "fotos": [
+        {
+          "titulo": "Fachada do cinema",
+          "arquivo": "assets/img/cineUna1.jfif"
+        },
+        {
+          "titulo": "Sala de exibição",
+          "arquivo": "assets/img/cineUna2.jpg"
+        },
+        {
+          "titulo": "Café e livraria",
+          "arquivo": "assets/img/cineUna3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Feira de Artes, Artesanato e Produtores de Variedades (Feira Hippie)",
+      "categoria": "Feiras",
+      "tags": ["artesanato", "compras", "feira", "gastronomia"],
+      "endereco": "Avenida Afonso Pena – Centro",
+      "descricaoCurta": "Maior feira de artesanato a céu aberto da América Latina",
+      "descricaoCompleta": "O espaço funciona como um grande shopping a céu aberto com opções de moda, decoração, arte, calçados e culinária típica.",
+      "disponibilidade": "Domingo 7h às 14h",
+      "dica": "A feira só funciona aos domingos, até as 14h: chegue cedo.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/feiraHippie.jpg",
+      "fotos": [
+        {
+          "titulo": "Barracas de artesanato",
+          "arquivo": "assets/img/feiraHippie1.webp"
+        },
+        {
+          "titulo": "Mais artesanatos",
+          "arquivo": "assets/img/feiraHippie2.jpg"
+        },
+        {
+          "titulo": "Movimentação",
+          "arquivo": "assets/img/feiraHippie3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Frizza - Pizza Frita Napolitana",
+      "categoria": "Gastronomia",
+      "tags": ["pizza", "gastronomia", "comida italiana", "restaurante"],
+      "endereco": "Rua dos Timbiras, 2636 - Santo Agostinho",
+      "descricaoCurta": "Restaurante onde são servidos produtos majoritariamente fritos – sejam eles doces ou salgados. São difusos por toda a Itália porém muito populares e tradicionais no centro de Nápoles, de onde surge nossa inspiração.",
+      "descricaoCompleta": "Frizza é um laboratório de experimentos onde nossa intenção é a de trazer do mediterrâneo para as montanhas de Minas produtos e pratos tradicionais e por vezes desconhecidos pelos brasileiros mas prezando – acima de tudo – por conservar receitas e técnicas de preparo com preço acessíveis.",
+      "disponibilidade": "Segunda a Domingo, das 17h30 às 22h30",
+      "dica": "A casa abre só à noite, a partir das 17h30.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/frizza.jpg",
+      "fotos": [
+        {
+          "titulo": "Pizzas",
+          "arquivo": "assets/img/frizza1.jpg"
+        },
+        {
+          "titulo": "Pizzas",
+          "arquivo": "assets/img/frizza3.jpg"
+        },
+        {
+          "titulo": "Ambiente",
+          "arquivo": "assets/img/frizza2.jpg"
+        },
+        {
+          "titulo": "Ambiente",
+          "arquivo": "assets/img/frizza5.jpg"
+        },
+        {
+          "titulo": "Bar",
+          "arquivo": "assets/img/frizza4.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Forno da Saudade",
+      "categoria": "Gastronomia",
+      "tags": ["pizza", "gastronomia", "ao ar livre", "encontro"],
+      "endereco": "R. Patrocínio, 1 - Carlos Prates",
+      "descricaoCurta": "Pizzaria e ponto de encontro popular em Belo Horizonte, famosa pelo conceito de pizza na praça, massa de fermentação natural e vista panorâmica da cidade.",
+      "descricaoCompleta": "Ocupa um casarão antigo e transforma a calçada e a Praça Zigue-Zague em um grande salão a céu aberto. Os clientes costumam comer nas mesas da casa, em bancos da praça ou ao ar livre, admirando a paisagem urbana da capital mineira.",
+      "disponibilidade": "Segunda a Sábado 17h às 23h30 <br> Domingo 15h às 21h30",
+      "dica": "Aos domingos a casa abre mais cedo (15h) e fecha mais cedo (21h30).",
+      "destaque": true,
+      "imagemPrincipal": "assets/img/fornoSaudade.webp",
+      "fotos": [
+        {
+          "titulo": "Letreiro",
+          "arquivo": "assets/img/fornoSaudade1.webp"
+        },
+        {
+          "titulo": "Movimentação",
+          "arquivo": "assets/img/fornoSaudade2.jfif"
+        },
+        {
+          "titulo": "Praça",
+          "arquivo": "assets/img/fornoSaudade3.jpg"
+        },
+        {
+          "titulo": "Pizza",
+          "arquivo": "assets/img/fornoSaudade5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Copa Cozinha",
+      "categoria": "Gastronomia",
+      "tags": ["café", "brunch", "quitandas"],
+      "endereco": "Rua Paraíba, 858 - Savassi ou Av. Francisco Sales, 199 - Floresta",
+      "descricaoCurta": "Um café e espaço de afeto especializado em quitandas artesanais, café coado na hora, brunch e almoços simples em ambientes acolhedores com toque de casa de vó.",
+      "descricaoCompleta": "Valoriza as raízes e a culinária mineira por meio de receitas clássicas como pão sovado na chapa com queijo meia-cura, bolo de fubá com queijo, tortinhas artesanais, croissants recheados e tortas de frutas. O ambiente aposta em uma decoração nostálgica e intimista.",
+      "disponibilidade": "Consulte a unidade do estabelecimento que deseja",
+      "dica": "Há duas unidades, na Savassi e na Floresta: escolha a mais perto de você.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/copaCozinha.jpg",
+      "fotos": [
+        {
+          "titulo": "Brunch",
+          "arquivo": "assets/img/copaCozinha1.jpg"
+        },
+        {
+          "titulo": "Ambiente",
+          "arquivo": "assets/img/copaCozinha2.jfif"
+        },
+        {
+          "titulo": "Exterior",
+          "arquivo": "assets/img/copaCozinha3.jpg"
+        },
+        {
+          "titulo": "Mais lanches",
+          "arquivo": "assets/img/copaCozinha4.webp"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Parque Guanabara",
+      "categoria": "Parque",
+      "tags": ["diversão", "brinquedos", "família", "Pampulha"],
+      "endereco": "Av. Expedicionário Benvindo Belém de Lima, 15 - São Luiz",
+      "descricaoCurta": "Parque de diversões, estabelecido em sua localização atual, na orla da Lagoa da Pampulha, em 1970. Fundado originalmente como um parque itinerante em 1951, é o mais antigo parque de diversões em operação contínua na capital mineira.",
+      "descricaoCompleta": "Conta com mais de 20 a 30 brinquedos que misturam nostalgia e adrenalina, incluindo Roda-Gigante, Sky Fall, brinquedos clássicos como o Minhocão, Carrinho Bate-Bate, Trem Fantasma e carrossel, além de vendas de lanches",
+      "disponibilidade": "Quinta-feira: Das 14h às 22h <br> Sexta-feira: Das 14h às 22h <br> Sábado: Das 14h às 22h <br> Domingo: Das 11h às 21h",
+      "dica": "Você pode aproveitar o dia para fazer outras atividades na orla da Pampulha e, à noite, ver o parque com os leds ligados!",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/parqueGuanabara.jpg",
+      "fotos": [
+        {
+          "titulo": "Twist",
+          "arquivo": "assets/img/parqueGuanabara1.jpg"
+        },
+        {
+          "titulo": "Crazy Dance",
+          "arquivo": "assets/img/parqueGuanabara2.webp"
+        },
+        {
+          "titulo": "Sky Fall (60m)",
+          "arquivo": "assets/img/parqueGuanabara3.webp"
+        },
+        {
+          "titulo": "Cataclimas",
+          "arquivo": "assets/img/parqueGuanabara4.jpg"
+        },
+        {
+          "titulo": "Minhocão",
+          "arquivo": "assets/img/parqueGuanabara5.webp"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Eu Que Fiz",
+      "categoria": "Gastronomia",
+      "tags": ["confeitaria", "bolos", "doces", "sobremesas", "café"],
+      "endereco": "Rua Santa Rita Durão, 1063 - Funcionários",
+      "descricaoCurta": "Confeitaria especializada em bolos, tortas, doces e sobremesas artesanais, com combinações especiais de sabores e receitas criativas.",
+      "descricaoCompleta": "A Eu Que Fiz é uma confeitaria conhecida por seus bolos, tortas e sobremesas festivas. Entre suas especialidades estão o Red Velvet, Cheesecake e a torta Delírio, que combina brownie, buttercream de baunilha, cookie e ganache de chocolate. Também oferece brownies, cookies, trufas e cafés, sendo uma ótima opção para quem aprecia doces e sobremesas diferenciadas.",
+      "valor": "Variável conforme os produtos escolhidos",
+      "disponibilidade": "Segunda a sexta: 10h às 20h <br> Sáb: 09h às 16h",
+      "dica": "Experimente a torta Delírio, uma das especialidades da confeitaria. Também vale conhecer os sabores de bolos e cookies disponíveis.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/euQueFiz1.webp",
+      "fotos": [
+        {
+          "titulo": "Bolo",
+          "arquivo": "assets/img/euQueFiz2.webp"
+        },
+        {
+          "titulo": "Bolo",
+          "arquivo": "assets/img/euQueFiz3.webp"
+        },
+        {
+          "titulo": "Sobremesa",
+          "arquivo": "assets/img/euQueFiz4.webp"
+        },
+        {
+          "titulo": "Foto do ambiente",
+          "arquivo": "assets/img/euQueFiz5.webp"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Rota 677 Pub",
+      "categoria": "Cultura",
+      "tags": ["rock", "música ao vivo", "pub", "shows", "vida noturna"],
+      "endereco": "Rua Vila Rica, 677 - Padre Eustáquio",
+      "descricaoCurta": "Pub temático de rock com apresentações de bandas ao vivo, bebidas e petiscos em um ambiente descontraído para os amantes da música.",
+      "descricaoCompleta": "O Rota 677 é o pub de rock definitivo em Belo Horizonte, situado no coração do bairro Padre Eustáquio. Com uma energia única e contagiante, a casa se destaca como um dos principais pontos de encontro para os amantes do bom e velho rock’n’roll. Palco das melhores bandas da cidade, o Rota 677 oferece uma experiência sonora e visual incomparável, em um ambiente estruturado para proporcionar noites inesquecíveis. Se você busca música de qualidade, atmosfera vibrante e uma verdadeira imersão no espírito do rock, este é o lugar certo!",
+      "valor": "Variável conforme consumo e programação",
+      "disponibilidade": "Quinta: 19h - 23h30 <br> Sexta e Sábado: 19h - 01h",
+      "dica": "Confira a programação de bandas antes de visitar e aproveite para conhecer as apresentações de rock ao vivo.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/rota6671.jfif",
+      "fotos": [
+        {
+          "titulo": "Foto do ambiente",
+          "arquivo": "assets/img/rota667.jpeg"
+        },
+        {
+          "titulo": "Foto do ambiente",
+          "arquivo": "assets/img/rota6672.jfif"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Feira Tom Jobim e Antiguidades",
+      "categoria": "Feiras",
+      "tags": ["antiguidades", "gastronomia", "comidas típicas", "cultura", "artesanato"],
+      "endereco": "Avenida Carandaí (esquina com Av. Brasil e Rua Ceará, em frente ao Colégio Arnaldo)",
+      "descricaoCurta": "Feira tradicional de Belo Horizonte que reúne gastronomia, antiguidades e atrações culturais em um ambiente agradável e arborizado.",
+      "descricaoCompleta": "A Feira Tom Jobim e Antiguidades acontece aos sábados na Avenida Carandaí, em Belo Horizonte. Sob a sombra de grandes gameleiras, o espaço reúne barracas de comidas e bebidas nacionais e internacionais, proporcionando uma experiência gastronômica ao ar livre. Ao lado, acontece a feira de antiguidades, onde expositores comercializam objetos raros, peças antigas e itens de colecionadores. O local também recebe atrações culturais, tornando-se uma opção agradável para passear, comer e conhecer um pouco mais da cultura da cidade.",
+      "valor": "Entrada gratuita; produtos comercializados pelos expositores são pagos",
+      "disponibilidade": "Sábados: 8h às 17h",
+      "dica": "Chegue pela manhã para aproveitar a feira com tranquilidade, experimentar comidas diferentes e explorar as barracas de antiguidades.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/feiraAntiguidade2.jpg",
+      "fotos": [
+        {
+          "titulo": "Barraquinhas",
+          "arquivo": "assets/img/feiraAntiguidade.jpg"
+        },
+        {
+          "titulo": "Ambiente para alimentação",
+          "arquivo": "assets/img/feiraAntiguidade1.jpeg"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Ponte Furada",
+      "categoria": "Gastronomia",
+      "tags": ["pizza", "pizzaria", "gastronomia", "massas"],
+      "endereco": "Av. Clara Nunes, 437 - Renascença, Belo Horizonte - MG",
+      "descricaoCurta": "A Ponte Furada é uma pizzaria com cardápio variado, que inclui pizzas tradicionais, massas, porções, bebidas e sobremesas.",
+      "descricaoCompleta": "Localizada no bairro Renascença, em Belo Horizonte, a Ponte Furada oferece um ambiente casual e um cardápio diversificado. Além das pizzas tradicionais e especiais, o estabelecimento também serve calzones, massas, porções, pratos executivos, bebidas e sobremesas.",
+      "disponibilidade": "Segunda a quinta: 18h às 23h30 <br> Sexta e Sábado: 11h às 00h30 <br> Domingo: 11h às 23h30",
+      "dica": "Confira o cardápio antes da visita e experimente as pizzas tradicionais da casa. O local também oferece outras opções além de pizzas.",
+      "destaque": false,
+      "imagemPrincipal": "assets/img/ponteFurada.webp",
+      "fotos": [
+        {
+          "titulo": "Pizza",
+          "arquivo": "assets/img/ponteFurada1.jfif"
+        },
+        {
+          "titulo": "Pizza",
+          "arquivo": "assets/img/ponteFurada2.jfif"
+        }
+      ]
+      
+    }
+  ]
+}
