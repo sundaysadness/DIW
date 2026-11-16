@@ -1,0 +1,21 @@
+.card-filme {
+    background-color: white;
+    width: 220px;
+    border: 1px solid #cccccc;
+}
+
+.poster {
+    width: 100%;
+}
+
+.card-corpo {
+    padding: 10px;
+}
+
+.titulo-filme {
+    font-size: 20px;
+}
+
+.card-corpo p {
+    font-size: 14px;
+}
